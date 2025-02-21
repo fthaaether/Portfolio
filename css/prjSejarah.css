@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/img/TechCover.jpg);
+  background-size: cover;
+}
+
+nav {
+  padding: 6px;
+}
+
+nav a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: lightslategray;
+  font-size: 1.2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav li :hover {
+  color: white;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
+  justify-content: right;
+  margin-right: 60px;
+}
+.main{
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.title {
+  margin-top: 70px;
+  text-align: center;
+}
+
+span {
+  color: #ffd014;
+}
+
+#rev {
+  color: white;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  animation: movedown 1s linear forwards;
+  opacity: 0%;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.container:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.container:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.container:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.container:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.text-box {
+  padding: 20px 30px;
+  background: #fff;
+  color: black;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.text-box:hover {
+  background-color: rgb(23, 23, 147);
+  transition: 1.2s;
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.text-box:hover a {
+  color: white;
+}
+
+.text-box a:hover {
+  color: white;
+}
+
+.text-box:hover p {
+  color: #ffd014;
+}
+
+#chip {
+  color: #ffd014;
+}
+
+.left-container {
+  left: 0;
+}
+.right-container {
+  left: 50%;
+}
+
+.container img {
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+}
+
+.right-container img {
+  left: -20px;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+  animation: moveline 3s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.text-box h2 {
+  font-weight: 600;
+}
+
+.text-box small {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid whitesmoke;
+  right: -15px;
+}
+
+.right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid whitesmoke;
+  left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline {
+    margin: 50px auto;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+
+  .text-box {
+    font-size: 13px;
+  }
+
+  .text-box small {
+    margin-bottom: 10px;
+  }
+
+  .right-container {
+    left: 0;
+  }
+
+  .left-container img,
+  .right-container img {
+    left: 10px;
+  }
+
+  .left-container-arrow,
+  .right-container-arrow {
+    border-right: 15px solid whitesmoke;
+    border-left: 0;
+    left: -15px;
+  }
+}
+
+.wew {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  gap: 80px;
+  background-color: #fff;
+  text-align: center;
+  align-items: center;
+  width: 50%;
+  padding: 8px;
+  border-radius: 6px;
+  margin-top: 1px;
+}
