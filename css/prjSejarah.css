@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(/img/TechCover.jpg);
+  background-image: url(./img/TechCover.jpg);
   background-size: cover;
 }
 
